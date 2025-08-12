@@ -7,6 +7,15 @@
     <title>Animated Countdown</title>
   </head>
   <body>
+    <div class="setup">
+      <h2>Countdown Timer</h2>
+      <div class="input-group">
+        <label for="countdownInput">Start countdown from:</label>
+        <input type="number" id="countdownInput" min="1" max="99" value="3" placeholder="Enter number">
+        <button id="startBtn">Start Countdown</button>
+      </div>
+    </div>
+
     <div class="counter">
       <div class="nums">
         <span class="in">3</span>
@@ -15,6 +24,7 @@
         <span>0</span>
       </div>
       <h4>Get Ready</h4>
+      <button id="stopBtn" style="margin-top: 12px;">Stop</button>
     </div>
 
     <div class="final">

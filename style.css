@@ -31,6 +31,95 @@ body::before {
   100% { opacity: 1; }
 }
 
+.setup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.setup h2 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.input-group label {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#countdownInput {
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#countdownInput:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#countdownInput::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#startBtn, #stopBtn {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  border-radius: 50px;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#startBtn:hover, #stopBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #764ba2, #667eea);
+}
+
 h4 {
   font-size: 24px;
   margin: 15px 0;
@@ -184,15 +273,22 @@ h4 {
 }
 
 #replay{
-  background-color: #3498db;
-  border-radius: 3px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  border-radius: 50px;
   border: none;
-  color: aliceblue;
-  padding: 5px;
+  color: white;
+  padding: 15px 30px;
   text-align: center;
   display: inline-block;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #replay span{
@@ -209,6 +305,12 @@ h4 {
   top: 0;
   right: -20px;
   transition: 0.5s;
+}
+
+#replay:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #764ba2, #667eea);
 }
 
 #replay:hover span{
