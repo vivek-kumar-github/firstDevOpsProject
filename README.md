@@ -1,2 +1,1 @@
-# firstDevOpsProject
-My First DevOps Project
+Counter Web app for practice on Windsurf
